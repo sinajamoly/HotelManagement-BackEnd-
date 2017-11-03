@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Book Room</h1>
+        <form  action="BookRoomServlet" method="post">
+            <table border="14">
+
+                <tbody>
+                    <tr>
+                        <td>Check In:</td>
+                        <td><input type="date" name="checkIn" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>Check Out:</td>
+                        <td><input type="date" name="checkOut" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>Room Code:</td>
+                        <td><input type="text" name="roomCode" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>Pay Now</td>
+                        <td><input type="checkbox" name="paid" value="ON" /></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br/>
+            <input type="submit" value="Book" />
+        </form>
+    </body>
+</html>

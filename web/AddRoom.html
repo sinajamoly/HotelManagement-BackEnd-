@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Add New Room</h1>
+        <form action="AddRoomServlet" method="POST">
+            <table border="1" cellpadding="4">
+                <tbody>
+                    <tr>
+                        <td>Room Code</td>
+                        <td>Room Type</td>
+                        <td>Capacity</td>
+                        <td>Location</td>
+                        <td>Cost</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="roomCode" value="" /></td>
+                        <td><select name="roomType">
+                                <option>Normal</option>
+                                <option>Excelent</option>
+                                <option>VIP</option>
+                                <option>VVIP</option>
+                            </select></td>
+                        <td><select name="roomCapacity">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </td>
+                        <td><select name="roomLocation">
+                                <option>Building_one</option>
+                                <option>Building_Two</option>
+                                <option>Bulding_Three</option>
+                            </select>
+                        </td>
+                        <td><input type="text" name="roomCost" value="" /></td>
+                    </tr>
+                </tbody>
+            </table>
+            <input type="submit" value="add Room" />
+        </form>
+        
+    </body>
+</html>
